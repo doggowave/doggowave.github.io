@@ -677,7 +677,10 @@ var links = [
               randIdx = parseInt(randIdx, 10);
               // construct the link to be opened
               var link = 'https://doggowave.github.io' + links[randIdx];
-            window.open(link);
+              var newContent = new Image();
+              document.createElement("img");
+              newContent.src = link;
+             newContent.onload = window.open(link)
 
         }
 </script>
